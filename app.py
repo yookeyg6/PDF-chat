@@ -3,7 +3,7 @@ from PyPDF2 import PdfReader
 import os
 from google import genai
 
-api_key = st.secrets("GEMINI_API_KEY")
+api_key = st.secrets["GEMINI_API_KEY"]
 if not api_key:
     st.error("Ошибка: API ключ не найден")
     st.stop()
